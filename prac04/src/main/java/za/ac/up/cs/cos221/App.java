@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 //Adrian Hawkins(u21669831)
+//Daniel Janish(u21444472)
 
 public class App extends javax.swing.JFrame {
 

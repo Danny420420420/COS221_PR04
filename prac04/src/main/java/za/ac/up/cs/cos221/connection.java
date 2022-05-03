@@ -6,18 +6,15 @@ import java.sql.DriverManager;
 
 import java.sql.SQLException;
 
-import java.io.File;  
+/*import java.io.File;  
 import java.io.FileNotFoundException;  
-import java.util.Scanner;
+import java.util.Scanner;*/
 
 
 public class connection {
     private static Connection con;
     public connection()throws SQLException{
         System.out.println("Connecting to database...");
-       /* String DBLocation = "jdbc:mariadb://127.0.0.1:3306/u21669831_sakila";
-        String user = "root";
-        String pass = "";*/
         String SAKILA_DB_HOST = "";
         String SAKILA_DB_PORT = "";
         String SAKILA_DB_NAME = "u21669831_sakila";
