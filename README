@@ -40,5 +40,5 @@ For example cd C:\yourFilename\prac04
 This will put you inside the prac04 directory
 Once here execute these two commands
 mvn install
-mvn exec:java -Dexec.mainClass="za.ac.up.cs.cos221.App"
+mvn exec:java -Dexec.mainClass="za.ac.up.cs.cos221.App" or mvn exec:java -Dexec.mainClass="za.ac.up.cs.cos221.movieStore"
 This will evecute the programme 
