@@ -1,5 +1,5 @@
 
-package za.ac.up.cs.cos221;
+/*package za.ac.up.cs.cos221;
 import java.sql.SQLException;
 
 import javax.swing.JCheckBox;
@@ -668,13 +668,13 @@ public class movieStore extends javax.swing.JFrame {
 	                    rental_rate = jRental_rate.getText();
 	                    length = jLength.getText();
 	                    replacement_cost = jReplacement_cost.getText();
-	                    special_features = jSpecial_features.getText();
+	                    special_features = jSpecial_features.getText();*/
 	
 	                    /*JOptionPane.showMessageDialog(null, "Title: " + title + "\nDescription: " + description + 
 	                    "\nRealease Year: " + release_year + "\nlanguage: " + language + "\nRental Duration: " + rental_duration + 
 	                    "\nRental Rate: " + rental_rate + "\nLength: " + length + "\nReplacement Cost: " + replacement_cost + 
 	                    "\nRating: " + getRating + "\nSpecial Features: " + special_features);*/
-	                    isCorrect = true;
+	                    /*isCorrect = true;
 	                    
 	            		DefaultTableModel tblModel = (DefaultTableModel)tblFilm.getModel();
 	            		try {
@@ -919,4 +919,4 @@ public class movieStore extends javax.swing.JFrame {
     private javax.swing.JTextField txtFilter;
     private javax.swing.JTextField txtPhone;
     private javax.swing.JTextField txtPostal_code;
-}
+}*/
