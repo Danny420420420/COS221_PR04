@@ -1,0 +1,44 @@
+Practical assignment 4 COS 221
+Adrian Hawkins(u21669831)
+Daniel Janisch(u21444472)
+
+SETTING UP THE DATABASSE:
+Copy and paste the sql file(name u21669831_sakila_dump.sql) into the mariaDB bin
+The bin can be found here by typing this into the directory: C:\Program Files\MariaDB 10.7\bin
+Once this has been done locate to the command prompt and run as administrator
+Once in the comand prompt navigate to the mariaDB bin by typing: cd C:\Program Files\MariaDB 10.7\bin
+Once inside the bin type the following to import the database: mysql -u root -p -D u21669831_sakila < u21669831_sakila_dump.sql
+Where u21669831_sakila is the name of the database that you intend to import the data into and u21669831_sakila_dump.sql is the name of your dump
+Enter your password
+After that the database should be viewable inside mariaDB or mysql workbench
+
+
+SETTING UP THE CONNECTION:
+Before running the program connection information to the database must be changed
+For simplicity inside the projects prac04\src\main\java\za\ac\up\cs\cos221 directory 
+A few java classes can be found, inside the previously mentioned directory a file named connection.java can be found
+In order to connect to your own personal database some text will need to be chnaged inside the file as follows:
+Inside the classes constructor(named connection()) you will find 5 string variables named:
+SAKILA_DB_HOST, SAKILA_DB_PORT, SAKILA_DB_NAME, SAKILA_DB_USERNAME, SAKILA_DB_PASSWORD
+
+In order to access your own personal database instance you will need to change these variables as follows:
+SAKILA_DB_HOST will need to be changed to your mariaDB's host name(for example 127.0.0.1 or localhost)
+SAKILA_DB_PORT will need to be changed to your mariaDB's port number(for example 3306)
+SAKILA_DB_NAME will need to be changed to the name of the database the program is reading from, in this case it will be u21669831_sakila if the database has been dumped correctly
+SAKILA_DB_USERNAME will need to be changed to the username of your mariaDB instance(for example root)
+SAKILA_DB_PASSWORD will need to be changed to your mariaDB instance's password(for example 1234)
+After you've changed all these variables and set up the database you should be all good to go and run the programme
+The above variables are for task 5 question 5.1
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+IF THE ABOVE IS NOT DONE CORRECTLY THE PROGRAMME WILL NOT RUN!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+RUNNING THE PROGRAMME:
+Once the above instructions have been followed running the project is simple
+Direct your cmd prompt into the file called prac04
+For example cd C:\yourFilename\prac04
+This will put you inside the prac04 directory
+Once here execute these two commands
+mvn install
+mvn exec:java -Dexec.mainClass="za.ac.up.cs.cos221.App"
+This will evecute the programme 
